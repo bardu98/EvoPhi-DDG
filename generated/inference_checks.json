@@ -1,0 +1,22 @@
+{
+  "device": "cpu",
+  "tolerance": 1e-05,
+  "checks": [
+    {
+      "dataset": "s96",
+      "code": "2kj3A-K13A",
+      "n_substitutions": 1,
+      "cpu_prediction": -0.7504398644644033,
+      "frozen_prediction": -0.7504414870910856,
+      "absolute_difference": 1.62262668235158e-06
+    },
+    {
+      "dataset": "ptmul_nr",
+      "code": "P00099-F29A_V35M_F56Y_E65Y",
+      "n_substitutions": 4,
+      "cpu_prediction": 0.955189786647684,
+      "frozen_prediction": 0.9551990761521504,
+      "absolute_difference": 9.289504466436505e-06
+    }
+  ]
+}

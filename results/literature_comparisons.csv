@@ -1,0 +1,12 @@
+dataset,method,pearson,mae,rmse,bibtex_keys,evaluation
+S669,DDGemb,0.53,0.99,1.40,savojardo2025,published direct variants
+S669,MSAesm_ddG original report,0.53,0.99,1.41,cuturello2024,published direct variants
+S669,PROSTATA,0.49,1.00,1.45,umerenkov2023;savojardo2025,published direct variants
+S669,ACDC-NN,0.46,1.05,1.49,pancotti2022;savojardo2025,published direct variants
+S669,INPS-Seq,0.43,1.09,1.53,pancotti2022;savojardo2025,published direct variants
+S669,ThermoMPNN,0.43,,1.52,cuturello2024;dieckhaus2024,published direct variants
+PTmul-NR,DDGemb,0.59,,,savojardo2025,published reference
+PTmul-NR,FoldX,0.36,,,savojardo2025,published reference
+PTmul-NR,MAESTRO,0.28,,,savojardo2025,published reference
+PTmul-NR,DDGun,0.23,,,savojardo2025,published reference
+PTmul-NR,DDGun3D,0.17,,,savojardo2025,published reference

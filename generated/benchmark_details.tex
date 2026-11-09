@@ -1,0 +1,63 @@
+\noindent\begin{minipage}{\linewidth}
+\section*{Supplementary Tables}
+\centering\small
+\captionof{table}{\textbf{Detailed evaluation on S669.} All predictors use the experimental labels distributed with JanusDDG. MAE and RMSE are in kcal/mol. Bold marks the best values and associated methods, including ties at two decimals.}
+\label{tab:s669}
+\begin{tabular}{lrrrr}\toprule
+Predictor & Pearson & Spearman & MAE & RMSE\\\midrule
+\multicolumn{5}{l}{\textbf{S669} ($n=669$)} \\
+JanusDDG & 0.55 & 0.55 & 0.97 & 1.39 \\
+MSAesm\_ddG original & 0.54 & 0.55 & 0.97 & 1.38 \\
+MSAesm\_ddG antisymmetrized & 0.53 & 0.55 & 0.99 & 1.39 \\
+EvoPhi-DDG & 0.53 & 0.55 & 0.99 & 1.39 \\
+\textbf{Equal-weight ensemble} & \textbf{0.59} & \textbf{0.61} & \textbf{0.91} & \textbf{1.33} \\
+\bottomrule\end{tabular}
+\end{minipage}\par
+\bigskip
+\noindent\begin{minipage}{\linewidth}
+
+\centering\small
+\captionof{table}{\textbf{Detailed evaluation on S461.} All predictors use the experimental labels distributed with JanusDDG. MAE and RMSE are in kcal/mol. Bold marks the best values and associated methods, including ties at two decimals.}
+\label{tab:s461}
+\begin{tabular}{lrrrr}\toprule
+Predictor & Pearson & Spearman & MAE & RMSE\\\midrule
+\multicolumn{5}{l}{\textbf{S461} ($n=461$)} \\
+JanusDDG & 0.69 & 0.66 & 0.71 & 0.96 \\
+MSAesm\_ddG original & 0.69 & 0.66 & 0.71 & 0.94 \\
+MSAesm\_ddG antisymmetrized & 0.66 & 0.65 & 0.73 & 0.97 \\
+EvoPhi-DDG & 0.66 & 0.65 & 0.73 & 0.97 \\
+\textbf{Equal-weight ensemble} & \textbf{0.75} & \textbf{0.72} & \textbf{0.65} & \textbf{0.88} \\
+\bottomrule\end{tabular}
+\end{minipage}\par
+\clearpage
+\noindent\begin{minipage}{\linewidth}
+
+\centering\small
+\captionof{table}{\textbf{Detailed evaluation on S96.} All predictors use the experimental labels distributed with JanusDDG. MAE and RMSE are in kcal/mol. Bold marks the best values and associated methods, including ties at two decimals.}
+\label{tab:s96}
+\begin{tabular}{lrrrr}\toprule
+Predictor & Pearson & Spearman & MAE & RMSE\\\midrule
+\multicolumn{5}{l}{\textbf{S96} ($n=96$)} \\
+JanusDDG & 0.52 & 0.50 & 1.50 & 2.10 \\
+MSAesm\_ddG original & 0.47 & 0.48 & 1.53 & 2.16 \\
+MSAesm\_ddG antisymmetrized & 0.48 & 0.47 & 1.53 & 2.14 \\
+EvoPhi-DDG & 0.48 & 0.47 & 1.53 & 2.14 \\
+\textbf{Equal-weight ensemble} & \textbf{0.55} & \textbf{0.52} & \textbf{1.45} & \textbf{2.04} \\
+\bottomrule\end{tabular}
+\end{minipage}\par
+\bigskip
+\noindent\begin{minipage}{\linewidth}
+
+\centering\small
+\captionof{table}{\textbf{Detailed evaluation on PTmul-NR.} All predictors use the experimental labels distributed with JanusDDG. MAE and RMSE are in kcal/mol. Bold marks the best values and associated methods, including ties at two decimals. The full set contains 82 variants; the training-restricted subset contains 67. The primary EvoPhi-DDG prediction uses zero hidden biases and component-and-whole antisymmetrization; the other constructions are sensitivity analyses.}
+\label{tab:ptmul}
+\begin{tabular}{lrrrr}\toprule
+Predictor & Pearson$_{82}$ & MAE$_{82}$ & RMSE$_{82}$ & Pearson$_{67}$\\\midrule
+JanusDDG & 0.61 & 1.57 & 2.06 & 0.69 \\
+\textbf{MSAesm\_ddG antisymmetrized} & \textbf{0.66} & \textbf{1.45} & \textbf{1.95} & 0.73 \\
+\textbf{EvoPhi-DDG} & \textbf{0.66} & \textbf{1.45} & \textbf{1.95} & 0.73 \\
+\textbf{Equal-weight ensemble} & \textbf{0.66} & 1.47 & \textbf{1.95} & \textbf{0.74} \\
+\textbf{EvoPhi-DDG: sequential, both directions} & \textbf{0.66} & \textbf{1.45} & \textbf{1.95} & 0.73 \\
+\textbf{EvoPhi-DDG: all mutation orders} & \textbf{0.66} & \textbf{1.45} & \textbf{1.95} & 0.73 \\
+\bottomrule\end{tabular}
+\end{minipage}\par

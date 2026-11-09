@@ -1,0 +1,16 @@
+{
+  "n_variants": 1308,
+  "single_projection_commutation_max_error": {
+    "S669": 1.1886978112940483e-07,
+    "S461": 1.1886978112940483e-07,
+    "S96": 4.440892098500626e-16
+  },
+  "primary_scores_unchanged": true,
+  "physical_primary_and_Janus_match_existing_paths": true,
+  "PT_whole_control_matches_existing_result": true,
+  "inputs": {
+    "data/ensemble_ablation_predictions.csv": "9ef32af0db27b4923cd4eaea4f17df92732bbf4209cfac3a3e040b62b747ba21",
+    "data/ensemble_ablation_path_repeats.csv": "5869ec4b93b4db714dfec61da3dcfa0ca36c436c2da47abe85a1c33fe6d00fa4",
+    "data/ensemble_ablation_path_summary.csv": "b26f9e43539c23dff27a0b59bcc19182ce9b260f0bcdeec1bd21e71a27f3c8e1"
+  }
+}

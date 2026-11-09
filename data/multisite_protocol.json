@@ -1,0 +1,19 @@
+{
+  "test": "Off-site three-edge detour for a direct single substitution",
+  "state_definition": "Exact PTmul subset sequences; no intermediate or endpoint experimental labels required",
+  "orientation": "Target is higher-numbered of two sites; temporary mutation is lower-numbered; other mutations held fixed",
+  "deduplication": "Identical four sequences and MSA query context count once",
+  "selection": "All distinct square faces of existing PTmul subset graphs, no score/label filtering",
+  "n_states": 270,
+  "n_directed_edges": 972,
+  "n_cycles": 303,
+  "n_WT_background_cycles": 110,
+  "n_proteins": 13,
+  "n_parent_variants": 82,
+  "checkpoints": "Published frozen models",
+  "alignments": "Existing query-specific homologs, order, depth and 16000-token limit; only query sequence changes",
+  "metrics": "Direct vs detour correlation and closure MAE/RMSE/max, plus closed-loop sum",
+  "no_training": true,
+  "no_new_MSA_search": true,
+  "seed": 42
+}

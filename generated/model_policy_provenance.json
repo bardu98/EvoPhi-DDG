@@ -1,0 +1,29 @@
+{
+  "primary_model": "EvoPhi-DDG",
+  "definition": "Antisymmetric MSAesm_ddG with fc1.bias set to zero",
+  "unchanged": [
+    "encoder",
+    "fc1.weight",
+    "fc2.weight",
+    "alignment contexts"
+  ],
+  "controls": "M_anti retains the published-hidden-bias antisymmetric prediction",
+  "datasets": {
+    "S669": {
+      "n": 669,
+      "source_sha256": "ef514b569a40d9867702e32f952890d78b025b6f3815da6d0c0d391400fd77b7"
+    },
+    "S461": {
+      "n": 461,
+      "source_sha256": "6e99170ae2160dad310521d7e57717097f0e38714509bbf4ea489ba1960e7e09"
+    },
+    "S96": {
+      "n": 96,
+      "source_sha256": "a3f276ed1a66a46c6f65d7d6295e8590a07693564e719189683a67fa48ba5733"
+    },
+    "PTmul-NR": {
+      "n": 82,
+      "source_sha256": "482ffcff584b670deccf484c6671df1aefa56c8df7b70dbe4ccabd5b729180bf"
+    }
+  }
+}

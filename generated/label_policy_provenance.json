@@ -1,0 +1,40 @@
+{
+  "policy": "Use experimental labels distributed with JanusDDG for every manuscript benchmark and every compared predictor.",
+  "requested_by_user": "2026-10-30",
+  "datasets": {
+    "S669": {
+      "n_variants": 669,
+      "changed_from_previous_primary": 14,
+      "source_file": "JanusDDG/data/s669_to_process.csv",
+      "source_sha256": "d6e82c53c6554988bdfa0f5cf5e457b421c3bcdc279e3bbf9e5304dddf0efe51",
+      "source_result_labels_and_sequences_identical": true,
+      "all_published_Janus_predictions_match": true
+    },
+    "S461": {
+      "n_variants": 461,
+      "changed_from_previous_primary": 0,
+      "source_file": "JanusDDG/data/s461_dir_analysis.csv",
+      "source_sha256": "d7aa02b73461d6e5fc97f2d05756f7f9bcfb4f7516264114f7643597280ded1e",
+      "source_result_labels_and_sequences_identical": true,
+      "all_published_Janus_predictions_match": true
+    },
+    "S96": {
+      "n_variants": 96,
+      "changed_from_previous_primary": 0,
+      "source_file": "JanusDDG/data/s96_test_set.csv",
+      "source_sha256": "23f43692f893b9712a0e4cabaf9994e50c3165d53140a94f2a28bc8e5f182953",
+      "source_result_labels_and_sequences_identical": true,
+      "all_published_Janus_predictions_match": true
+    },
+    "PTmul-NR": {
+      "n_variants": 82,
+      "changed_from_previous_primary": 0,
+      "source_file": "JanusDDG/data/Ptmul_NR.csv",
+      "source_sha256": "086f886a851dab3d9e8df563e4a00b94344bda0678e0f1baaa4a99620e2125f3",
+      "source_result_labels_and_sequences_identical": true,
+      "all_published_Janus_predictions_match": true
+    }
+  },
+  "mapping": "S669 reuses the audited bijection to source row, validated by sequence, mutation, direction, native labels and published scores; other sets use unique protein-mutation keys. Repeated measurements are retained.",
+  "frozen_table_sha256": "7a584809f36fe61af96cf89edc8012c2c409c1e4de4adf58d94b23223ca13cf6"
+}

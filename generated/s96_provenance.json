@@ -1,0 +1,126 @@
+{
+  "n_variants": 96,
+  "n_WT_sequences": 14,
+  "n_protein_ids": 14,
+  "checkpoint": "Published original MSAesm and final Janus checkpoints; no locally fitted heads",
+  "token_budget": 16000,
+  "msa_filter": {
+    "id": 90,
+    "diff": 1000,
+    "cov": 0,
+    "qid": 0,
+    "qsc": -20
+  },
+  "n_variants_shared_with_S669_by_existing_coordinate_mapping": 22,
+  "n_identical_full_sequence_variant_inputs_to_current_S669": 3,
+  "n_identical_WT_sequences_to_current_S669": 2,
+  "no_training_or_new_inference": true,
+  "no_new_alignment_search": true,
+  "inputs_sha256": {
+    "source": "23f43692f893b9712a0e4cabaf9994e50c3165d53140a94f2a28bc8e5f182953",
+    "janus": "ff866cf101fd301769621a18a2982819228144948e662feeeddc46862e44fc3c",
+    "msa": "2619347f6f20f9639066a92ddf317ef4cbd75bf226fedbcb9a496cd8aee8efb1",
+    "context": "090235134697f36b029bf120cc3624cd745539d64ce8e2e179a2f36c5be90811"
+  },
+  "alignments": [
+    {
+      "protein": "1jnxX",
+      "length": 207,
+      "available_depth": 569,
+      "used_depth": 76,
+      "sha256": "8eb19df4dcb3adcd172a6644e0d870afbd655bebe64a8715d43dbc0105836901"
+    },
+    {
+      "protein": "2kj3A",
+      "length": 79,
+      "available_depth": 88,
+      "used_depth": 88,
+      "sha256": "2e99c025aec9e7410f3ecbd3434baefa12ae6322f314376ed7451edf44b855fe"
+    },
+    {
+      "protein": "5cg0A",
+      "length": 488,
+      "available_depth": 1592,
+      "used_depth": 32,
+      "sha256": "c09d8a907a429460d452e651ba835f8e663f5363dc10a083cf402b8f69e1bbe1"
+    },
+    {
+      "protein": "1k85A",
+      "length": 88,
+      "available_depth": 1933,
+      "used_depth": 179,
+      "sha256": "ad65a79530e4f9805c7178c358b1caca154f52de4f7c65c6cc8028d00ddb1cdb"
+    },
+    {
+      "protein": "3oniA",
+      "length": 110,
+      "available_depth": 1112,
+      "used_depth": 144,
+      "sha256": "b10dfd0f1a271b7e1cad8487c1012a6ffa61f3b8abe913d22030ce6a5b02504c"
+    },
+    {
+      "protein": "1ekgA",
+      "length": 119,
+      "available_depth": 1061,
+      "used_depth": 133,
+      "sha256": "6bec32fcf98841c67298fe7101eb16dd4958a89a0c7a2b18ba272b9a8bc06b03"
+    },
+    {
+      "protein": "3x3uA",
+      "length": 104,
+      "available_depth": 1865,
+      "used_depth": 152,
+      "sha256": "4a1fab30826b3cb64d235cef812f8d61d61d156f46c26dc3015c5d70260bc218"
+    },
+    {
+      "protein": "3s92A",
+      "length": 110,
+      "available_depth": 1072,
+      "used_depth": 144,
+      "sha256": "3110eaf4e266ed63404b135df48377f88aafc0f02079540f43affcf547e2a0d7"
+    },
+    {
+      "protein": "1xwsA",
+      "length": 273,
+      "available_depth": 1085,
+      "used_depth": 58,
+      "sha256": "db3af700134d0f12102c7aab72387df6c3842bfbeb3c0ac89da1c6ea1d8084ab"
+    },
+    {
+      "protein": "1dxxA",
+      "length": 238,
+      "available_depth": 1492,
+      "used_depth": 66,
+      "sha256": "d3f9ab5a65601448b15437cb4ca3398c4f95f73ebf78ff20d2c46df4224d7978"
+    },
+    {
+      "protein": "2arfA",
+      "length": 165,
+      "available_depth": 1199,
+      "used_depth": 96,
+      "sha256": "c199db10a60fad5e4d5102ddc7043ea8d0b21bf206f6c682d50ab9008ac7c5ba"
+    },
+    {
+      "protein": "2ks4A",
+      "length": 176,
+      "available_depth": 433,
+      "used_depth": 90,
+      "sha256": "fb31498f3baa8874cdc1c1450adcf3253396bb7007cf8f85cfcd1ac8c36f2414"
+    },
+    {
+      "protein": "2v0uA",
+      "length": 146,
+      "available_depth": 1200,
+      "used_depth": 108,
+      "sha256": "544f705b222b0caa12223357cb94b70f45d4396cb5633360bbf4987a78f9fa1c"
+    },
+    {
+      "protein": "1gwyA",
+      "length": 175,
+      "available_depth": 373,
+      "used_depth": 90,
+      "sha256": "718d3d00aae8c1ad3d94e205b38c92150207f10e5d02859cb8ff498764bb52be"
+    }
+  ],
+  "antisymmetric_max_abs_difference": 4.440892098500626e-16
+}

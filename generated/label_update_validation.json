@@ -1,0 +1,22 @@
+{
+  "label_source": "JanusDDG distributed experimental labels",
+  "source_mapping_validated": true,
+  "changed_labels": {
+    "S669": 14,
+    "S461": 0,
+    "S96": 0,
+    "PTmul_NR": 0
+  },
+  "predictions_unchanged": true,
+  "physical_consistency_results_unchanged": true,
+  "other_benchmark_statistics_unchanged": true,
+  "regression_independently_recomputed": true,
+  "classification_truth_matches_frozen_labels": true,
+  "offline_replay_scripts": [
+    "analysis.py",
+    "classification.py",
+    "ensemble_ablation.py"
+  ],
+  "offline_result_tolerance": 1e-12,
+  "latex_build_passed": true
+}

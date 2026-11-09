@@ -1,0 +1,16 @@
+\begin{tabular}{llrrr}\toprule
+Method & Source & Pearson & MAE & RMSE\\\midrule
+DDGemb & \citep{savojardo2025} & 0.53 & 0.99 & 1.40 \\
+MSAesm\_ddG original report & \citep{cuturello2024} & 0.53 & 0.99 & 1.41 \\
+PROSTATA & \citep{umerenkov2023,savojardo2025} & 0.49 & 1.00 & 1.45 \\
+ACDC-NN & \citep{pancotti2022,savojardo2025} & 0.46 & 1.05 & 1.49 \\
+INPS-Seq & \citep{pancotti2022,savojardo2025} & 0.43 & 1.09 & 1.53 \\
+ThermoMPNN & \citep{cuturello2024,dieckhaus2024} & 0.43 & --- & 1.52 \\
+\midrule
+JanusDDG & This study & 0.55 & 0.97 & 1.39 \\
+MSAesm\_ddG, current inputs & This study & 0.54 & 0.97 & 1.38 \\
+MSAesm\_ddG, antisymmetrized & This study & 0.53 & 0.99 & 1.39 \\
+EvoPhi-DDG & This study & 0.53 & 0.99 & 1.39 \\
+\textbf{Mean with original MSAesm\_ddG} & This study & \textbf{0.59} & 0.92 & 1.34 \\
+\textbf{Fixed equal-weight ensemble} & This study & \textbf{0.59} & \textbf{0.91} & \textbf{1.33} \\
+\bottomrule\end{tabular}

@@ -1,0 +1,31 @@
+{
+  "dataset": "669 S669 endpoint pairs, 87 full-length WT sequences",
+  "n_intermediates": [
+    2,
+    4,
+    6,
+    8,
+    10
+  ],
+  "repeats": 10,
+  "seed": 42,
+  "models": [
+    "MSAesm_ddG original",
+    "MSAesm_ddG antisymmetric",
+    "EvoPhi-DDG"
+  ],
+  "path": "Introduce m=N/2 temporary changes at distinct non-target sites, apply target change, revert temporary changes in reverse order",
+  "random_rule": "Uniform non-target standard-AA positions within fixed window; replacement uniform among 19 non-WT residues",
+  "windows": "Identical mutation-centered windows as existing S669 results, length <=1022",
+  "msa": "Existing MMseqs2 + HHfilter id90 diff1000 cov0 qid0 qsc-20; same homologs/order/depth in all states; 16000 tokens",
+  "encoder": "Published frozen MSA Transformer layer12; FP32; dropout disabled",
+  "pooling": "Published query pooling, excluding initial token and final real residue",
+  "no_training": true,
+  "no_experimental_labels": true,
+  "n_contexts": 92,
+  "n_states": 196196,
+  "n_directed_edges": 229558,
+  "n_paths": 33450,
+  "feature_storage_bytes": 1950130176,
+  "script_sha256": "12430ad1285d786d6ddfc77e258b776982c552ae0596fbb433ffe15a83a67620"
+}

@@ -1,0 +1,661 @@
+{
+  "contexts": [
+    {
+      "context": 0,
+      "query": "Q0116",
+      "full_length": 201,
+      "unmodified_forward_abs_error": 1.1324882507324219e-06
+    },
+    {
+      "context": 1,
+      "query": "Q0117",
+      "full_length": 146,
+      "unmodified_forward_abs_error": 3.635883331298828e-06,
+      "max_published_direct_abs_error": 0.00010398503189090746
+    },
+    {
+      "context": 2,
+      "query": "Q0118",
+      "full_length": 550,
+      "unmodified_forward_abs_error": 9.000301361083984e-06,
+      "max_published_direct_abs_error": 2.4621564407356633e-05
+    },
+    {
+      "context": 3,
+      "query": "Q0119",
+      "full_length": 69,
+      "unmodified_forward_abs_error": 3.0994415283203125e-06,
+      "max_published_direct_abs_error": 3.522241331099796e-05
+    },
+    {
+      "context": 4,
+      "query": "Q0120",
+      "full_length": 1754,
+      "unmodified_forward_abs_error": 1.169741153717041e-06,
+      "max_published_direct_abs_error": 2.7929900378228026e-05
+    },
+    {
+      "context": 5,
+      "query": "Q0121",
+      "full_length": 2485,
+      "unmodified_forward_abs_error": 1.1175870895385742e-05,
+      "max_published_direct_abs_error": 6.191300434110758e-06
+    },
+    {
+      "context": 6,
+      "query": "Q0121",
+      "full_length": 2485,
+      "unmodified_forward_abs_error": 5.930662155151367e-06,
+      "max_published_direct_abs_error": 1.9400287933346583e-05
+    },
+    {
+      "context": 7,
+      "query": "Q0122",
+      "full_length": 149,
+      "unmodified_forward_abs_error": 3.725290298461914e-06,
+      "max_published_direct_abs_error": 0.0001049640480041969
+    },
+    {
+      "context": 8,
+      "query": "Q0123",
+      "full_length": 3685,
+      "unmodified_forward_abs_error": 6.370246410369873e-07,
+      "max_published_direct_abs_error": 9.478785991667849e-07
+    },
+    {
+      "context": 9,
+      "query": "Q0124",
+      "full_length": 210,
+      "unmodified_forward_abs_error": 8.344650268554688e-06,
+      "max_published_direct_abs_error": 0.00026921354751585636
+    },
+    {
+      "context": 10,
+      "query": "Q0125",
+      "full_length": 428,
+      "unmodified_forward_abs_error": 2.6226043701171875e-06,
+      "max_published_direct_abs_error": 2.0847232055754006e-05
+    },
+    {
+      "context": 11,
+      "query": "Q0126",
+      "full_length": 99,
+      "unmodified_forward_abs_error": 7.152557373046875e-07,
+      "max_published_direct_abs_error": 9.995159912179474e-06
+    },
+    {
+      "context": 12,
+      "query": "Q0127",
+      "full_length": 619,
+      "unmodified_forward_abs_error": 1.341104507446289e-06,
+      "max_published_direct_abs_error": 6.902194591522359e-05
+    },
+    {
+      "context": 13,
+      "query": "Q0128",
+      "full_length": 99,
+      "unmodified_forward_abs_error": 4.976987838745117e-06,
+      "max_published_direct_abs_error": 0.00020854080047616463
+    },
+    {
+      "context": 14,
+      "query": "Q0129",
+      "full_length": 424,
+      "unmodified_forward_abs_error": 7.420778274536133e-06,
+      "max_published_direct_abs_error": 0.00013828775970459173
+    },
+    {
+      "context": 15,
+      "query": "Q0130",
+      "full_length": 795,
+      "unmodified_forward_abs_error": 3.4570693969726562e-06,
+      "max_published_direct_abs_error": 1.9055938720757837e-05
+    },
+    {
+      "context": 16,
+      "query": "Q0131",
+      "full_length": 648,
+      "unmodified_forward_abs_error": 7.152557373046875e-07,
+      "max_published_direct_abs_error": 0.00017691099113464892
+    },
+    {
+      "context": 17,
+      "query": "Q0132",
+      "full_length": 175,
+      "unmodified_forward_abs_error": 7.212162017822266e-06,
+      "max_published_direct_abs_error": 3.0220434265149088e-05
+    },
+    {
+      "context": 18,
+      "query": "Q0133",
+      "full_length": 97,
+      "unmodified_forward_abs_error": 2.205371856689453e-06,
+      "max_published_direct_abs_error": 8.045984802240724e-05
+    },
+    {
+      "context": 19,
+      "query": "Q0134",
+      "full_length": 595,
+      "unmodified_forward_abs_error": 7.867813110351562e-06,
+      "max_published_direct_abs_error": 6.293816528324392e-05
+    },
+    {
+      "context": 20,
+      "query": "Q0135",
+      "full_length": 83,
+      "unmodified_forward_abs_error": 1.1920928955078125e-06,
+      "max_published_direct_abs_error": 0.00010329248504636901
+    },
+    {
+      "context": 21,
+      "query": "Q0136",
+      "full_length": 1382,
+      "unmodified_forward_abs_error": 1.3217329978942871e-05,
+      "max_published_direct_abs_error": 4.2741349716185484e-05
+    },
+    {
+      "context": 22,
+      "query": "Q0137",
+      "full_length": 153,
+      "unmodified_forward_abs_error": 4.291534423828125e-06,
+      "max_published_direct_abs_error": 2.4154487609839848e-05
+    },
+    {
+      "context": 23,
+      "query": "Q0138",
+      "full_length": 114,
+      "unmodified_forward_abs_error": 3.6954879760742188e-06,
+      "max_published_direct_abs_error": 0.0001771479922485497
+    },
+    {
+      "context": 24,
+      "query": "Q0139",
+      "full_length": 1207,
+      "unmodified_forward_abs_error": 1.3113021850585938e-06,
+      "max_published_direct_abs_error": 5.3901110839804645e-05
+    },
+    {
+      "context": 25,
+      "query": "Q0140",
+      "full_length": 209,
+      "unmodified_forward_abs_error": 5.543231964111328e-06,
+      "max_published_direct_abs_error": 4.0353733367914923e-05
+    },
+    {
+      "context": 26,
+      "query": "Q0141",
+      "full_length": 96,
+      "unmodified_forward_abs_error": 2.384185791015625e-06,
+      "max_published_direct_abs_error": 2.5309902953907226e-05
+    },
+    {
+      "context": 27,
+      "query": "Q0142",
+      "full_length": 3054,
+      "unmodified_forward_abs_error": 7.897615432739258e-06,
+      "max_published_direct_abs_error": 3.6241575317397245e-05
+    },
+    {
+      "context": 28,
+      "query": "Q0142",
+      "full_length": 3054,
+      "unmodified_forward_abs_error": 4.798173904418945e-06,
+      "max_published_direct_abs_error": 3.3274832305918434e-05
+    },
+    {
+      "context": 29,
+      "query": "Q0142",
+      "full_length": 3054,
+      "unmodified_forward_abs_error": 4.991888999938965e-06,
+      "max_published_direct_abs_error": 2.623325476455718e-05
+    },
+    {
+      "context": 30,
+      "query": "Q0142",
+      "full_length": 3054,
+      "unmodified_forward_abs_error": 3.5762786865234375e-07,
+      "max_published_direct_abs_error": 5.974400329455953e-07
+    },
+    {
+      "context": 31,
+      "query": "Q0142",
+      "full_length": 3054,
+      "unmodified_forward_abs_error": 1.9222497940063477e-06,
+      "max_published_direct_abs_error": 5.431704044342456e-05
+    },
+    {
+      "context": 32,
+      "query": "Q0143",
+      "full_length": 154,
+      "unmodified_forward_abs_error": 2.2649765014648438e-06,
+      "max_published_direct_abs_error": 0.00010275436401374627
+    },
+    {
+      "context": 33,
+      "query": "Q0144",
+      "full_length": 96,
+      "unmodified_forward_abs_error": 6.109476089477539e-06,
+      "max_published_direct_abs_error": 6.0920441436768114e-05
+    },
+    {
+      "context": 34,
+      "query": "Q0145",
+      "full_length": 376,
+      "unmodified_forward_abs_error": 1.3671815395355225e-05,
+      "max_published_direct_abs_error": 1.7428794975279938e-05
+    },
+    {
+      "context": 35,
+      "query": "Q0146",
+      "full_length": 128,
+      "unmodified_forward_abs_error": 1.0728836059570312e-06,
+      "max_published_direct_abs_error": 8.605194854727216e-05
+    },
+    {
+      "context": 36,
+      "query": "Q0147",
+      "full_length": 419,
+      "unmodified_forward_abs_error": 6.020069122314453e-06,
+      "max_published_direct_abs_error": 0.00010319713745099435
+    },
+    {
+      "context": 37,
+      "query": "Q0148",
+      "full_length": 345,
+      "unmodified_forward_abs_error": 1.576542854309082e-05,
+      "max_published_direct_abs_error": 0.00020496258186339378
+    },
+    {
+      "context": 38,
+      "query": "Q0149",
+      "full_length": 140,
+      "unmodified_forward_abs_error": 7.152557373046875e-07,
+      "max_published_direct_abs_error": 4.41038909912983e-05
+    },
+    {
+      "context": 39,
+      "query": "Q0150",
+      "full_length": 493,
+      "unmodified_forward_abs_error": 3.814697265625e-06,
+      "max_published_direct_abs_error": 8.725696411149286e-05
+    },
+    {
+      "context": 40,
+      "query": "Q0151",
+      "full_length": 505,
+      "unmodified_forward_abs_error": 1.1056661605834961e-05,
+      "max_published_direct_abs_error": 0.00010643867492676762
+    },
+    {
+      "context": 41,
+      "query": "Q0152",
+      "full_length": 274,
+      "unmodified_forward_abs_error": 2.86102294921875e-06,
+      "max_published_direct_abs_error": 1.4838074340772778e-05
+    },
+    {
+      "context": 42,
+      "query": "Q0153",
+      "full_length": 3388,
+      "unmodified_forward_abs_error": 2.6226043701171875e-06,
+      "max_published_direct_abs_error": 7.593834793095944e-05
+    },
+    {
+      "context": 43,
+      "query": "Q0154",
+      "full_length": 801,
+      "unmodified_forward_abs_error": 7.748603820800781e-07,
+      "max_published_direct_abs_error": 6.79533619690198e-05
+    },
+    {
+      "context": 44,
+      "query": "Q0155",
+      "full_length": 313,
+      "unmodified_forward_abs_error": 4.1425228118896484e-06,
+      "max_published_direct_abs_error": 3.176459121703723e-05
+    },
+    {
+      "context": 45,
+      "query": "Q0156",
+      "full_length": 213,
+      "unmodified_forward_abs_error": 5.476176738739014e-07,
+      "max_published_direct_abs_error": 5.3649791355130094e-05
+    },
+    {
+      "context": 46,
+      "query": "Q0157",
+      "full_length": 193,
+      "unmodified_forward_abs_error": 1.7285346984863281e-06,
+      "max_published_direct_abs_error": 9.820227966306216e-05
+    },
+    {
+      "context": 47,
+      "query": "Q0158",
+      "full_length": 1465,
+      "unmodified_forward_abs_error": 3.725290298461914e-06,
+      "max_published_direct_abs_error": 3.234348373415408e-05
+    },
+    {
+      "context": 48,
+      "query": "Q0159",
+      "full_length": 101,
+      "unmodified_forward_abs_error": 4.291534423828125e-06,
+      "max_published_direct_abs_error": 0.00010566161804215213
+    },
+    {
+      "context": 49,
+      "query": "Q0160",
+      "full_length": 126,
+      "unmodified_forward_abs_error": 2.6226043701171875e-06,
+      "max_published_direct_abs_error": 3.603416748054755e-05
+    },
+    {
+      "context": 50,
+      "query": "Q0161",
+      "full_length": 119,
+      "unmodified_forward_abs_error": 3.993511199951172e-06,
+      "max_published_direct_abs_error": 8.352725219706869e-05
+    },
+    {
+      "context": 51,
+      "query": "Q0162",
+      "full_length": 1435,
+      "unmodified_forward_abs_error": 8.940696716308594e-08,
+      "max_published_direct_abs_error": 3.719096412657663e-05
+    },
+    {
+      "context": 52,
+      "query": "Q0163",
+      "full_length": 448,
+      "unmodified_forward_abs_error": 1.0728836059570312e-05,
+      "max_published_direct_abs_error": 9.323839073183127e-05
+    },
+    {
+      "context": 53,
+      "query": "Q0164",
+      "full_length": 465,
+      "unmodified_forward_abs_error": 7.152557373046875e-07,
+      "max_published_direct_abs_error": 0.00012127862548827473
+    },
+    {
+      "context": 54,
+      "query": "Q0165",
+      "full_length": 289,
+      "unmodified_forward_abs_error": 3.2186508178710938e-06,
+      "max_published_direct_abs_error": 9.72575083160454e-05
+    },
+    {
+      "context": 55,
+      "query": "Q0166",
+      "full_length": 176,
+      "unmodified_forward_abs_error": 2.1457672119140625e-06,
+      "max_published_direct_abs_error": 7.110539291382834e-05
+    },
+    {
+      "context": 56,
+      "query": "Q0167",
+      "full_length": 683,
+      "unmodified_forward_abs_error": 5.476176738739014e-06,
+      "max_published_direct_abs_error": 0.00012981305084225347
+    },
+    {
+      "context": 57,
+      "query": "Q0168",
+      "full_length": 430,
+      "unmodified_forward_abs_error": 5.960464477539062e-07,
+      "max_published_direct_abs_error": 2.7627093505788736e-05
+    },
+    {
+      "context": 58,
+      "query": "Q0169",
+      "full_length": 781,
+      "unmodified_forward_abs_error": 2.3245811462402344e-06,
+      "max_published_direct_abs_error": 9.546719589234587e-05
+    },
+    {
+      "context": 59,
+      "query": "Q0170",
+      "full_length": 540,
+      "unmodified_forward_abs_error": 1.800060272216797e-05,
+      "max_published_direct_abs_error": 0.00031685433349615266
+    },
+    {
+      "context": 60,
+      "query": "Q0171",
+      "full_length": 777,
+      "unmodified_forward_abs_error": 2.5391578674316406e-05,
+      "max_published_direct_abs_error": 5.8387602615339596e-05
+    },
+    {
+      "context": 61,
+      "query": "Q0172",
+      "full_length": 1362,
+      "unmodified_forward_abs_error": 2.2813677787780762e-05,
+      "max_published_direct_abs_error": 9.373929462433428e-05
+    },
+    {
+      "context": 62,
+      "query": "Q0173",
+      "full_length": 261,
+      "unmodified_forward_abs_error": 3.427267074584961e-06,
+      "max_published_direct_abs_error": 6.227419502258247e-05
+    },
+    {
+      "context": 63,
+      "query": "Q0174",
+      "full_length": 455,
+      "unmodified_forward_abs_error": 7.3909759521484375e-06,
+      "max_published_direct_abs_error": 0.00010159751281735296
+    },
+    {
+      "context": 64,
+      "query": "Q0175",
+      "full_length": 592,
+      "unmodified_forward_abs_error": 9.298324584960938e-06,
+      "max_published_direct_abs_error": 3.1833828964239475e-05
+    },
+    {
+      "context": 65,
+      "query": "Q0176",
+      "full_length": 297,
+      "unmodified_forward_abs_error": 6.0498714447021484e-06,
+      "max_published_direct_abs_error": 5.413155441280626e-05
+    },
+    {
+      "context": 66,
+      "query": "Q0177",
+      "full_length": 218,
+      "unmodified_forward_abs_error": 1.0341405868530273e-05,
+      "max_published_direct_abs_error": 5.6688234100321644e-05
+    },
+    {
+      "context": 67,
+      "query": "Q0178",
+      "full_length": 281,
+      "unmodified_forward_abs_error": 1.811981201171875e-05,
+      "max_published_direct_abs_error": 8.65655822754885e-05
+    },
+    {
+      "context": 68,
+      "query": "Q0179",
+      "full_length": 199,
+      "unmodified_forward_abs_error": 9.417533874511719e-06,
+      "max_published_direct_abs_error": 4.597766481781451e-05
+    },
+    {
+      "context": 69,
+      "query": "Q0180",
+      "full_length": 112,
+      "unmodified_forward_abs_error": 7.092952728271484e-06,
+      "max_published_direct_abs_error": 2.264524475092955e-05
+    },
+    {
+      "context": 70,
+      "query": "Q0181",
+      "full_length": 486,
+      "unmodified_forward_abs_error": 3.3676624298095703e-06,
+      "max_published_direct_abs_error": 4.5764129638747875e-05
+    },
+    {
+      "context": 71,
+      "query": "Q0182",
+      "full_length": 212,
+      "unmodified_forward_abs_error": 3.844499588012695e-06,
+      "max_published_direct_abs_error": 4.5123473052965934e-05
+    },
+    {
+      "context": 72,
+      "query": "Q0183",
+      "full_length": 139,
+      "unmodified_forward_abs_error": 1.4185905456542969e-05,
+      "max_published_direct_abs_error": 3.3337738800043315e-05
+    },
+    {
+      "context": 73,
+      "query": "Q0184",
+      "full_length": 428,
+      "unmodified_forward_abs_error": 8.821487426757812e-06,
+      "max_published_direct_abs_error": 0.0001064691497802972
+    },
+    {
+      "context": 74,
+      "query": "Q0185",
+      "full_length": 98,
+      "unmodified_forward_abs_error": 1.3709068298339844e-05,
+      "max_published_direct_abs_error": 3.569638061806657e-07
+    },
+    {
+      "context": 75,
+      "query": "Q0186",
+      "full_length": 701,
+      "unmodified_forward_abs_error": 6.318092346191406e-06,
+      "max_published_direct_abs_error": 7.942338714594932e-05
+    },
+    {
+      "context": 76,
+      "query": "Q0187",
+      "full_length": 724,
+      "unmodified_forward_abs_error": 6.67572021484375e-06,
+      "max_published_direct_abs_error": 4.851377044678973e-05
+    },
+    {
+      "context": 77,
+      "query": "Q0188",
+      "full_length": 447,
+      "unmodified_forward_abs_error": 1.3232231140136719e-05,
+      "max_published_direct_abs_error": 1.8922860717807133e-05
+    },
+    {
+      "context": 78,
+      "query": "Q0189",
+      "full_length": 50,
+      "unmodified_forward_abs_error": 1.1920928955078125e-07,
+      "max_published_direct_abs_error": 0.0001324066574097671
+    },
+    {
+      "context": 79,
+      "query": "Q0190",
+      "full_length": 161,
+      "unmodified_forward_abs_error": 4.76837158203125e-07,
+      "max_published_direct_abs_error": 0.00019930715332039384
+    },
+    {
+      "context": 80,
+      "query": "Q0191",
+      "full_length": 726,
+      "unmodified_forward_abs_error": 6.616115570068359e-06,
+      "max_published_direct_abs_error": 7.35945129393123e-07
+    },
+    {
+      "context": 81,
+      "query": "Q0192",
+      "full_length": 227,
+      "unmodified_forward_abs_error": 7.361173629760742e-06,
+      "max_published_direct_abs_error": 6.666926574694365e-06
+    },
+    {
+      "context": 82,
+      "query": "Q0193",
+      "full_length": 54,
+      "unmodified_forward_abs_error": 1.2218952178955078e-05,
+      "max_published_direct_abs_error": 8.245967254638664e-05
+    },
+    {
+      "context": 83,
+      "query": "Q0194",
+      "full_length": 98,
+      "unmodified_forward_abs_error": 8.359551429748535e-06,
+      "max_published_direct_abs_error": 4.001085205085353e-05
+    },
+    {
+      "context": 84,
+      "query": "Q0195",
+      "full_length": 125,
+      "unmodified_forward_abs_error": 5.0067901611328125e-06,
+      "max_published_direct_abs_error": 5.453356552120869e-05
+    },
+    {
+      "context": 85,
+      "query": "Q0196",
+      "full_length": 271,
+      "unmodified_forward_abs_error": 8.940696716308594e-07,
+      "max_published_direct_abs_error": 2.020543945313591e-05
+    },
+    {
+      "context": 86,
+      "query": "Q0197",
+      "full_length": 270,
+      "unmodified_forward_abs_error": 5.811452865600586e-07,
+      "max_published_direct_abs_error": 2.796186103438958e-05
+    },
+    {
+      "context": 87,
+      "query": "Q0198",
+      "full_length": 434,
+      "unmodified_forward_abs_error": 2.86102294921875e-05,
+      "max_published_direct_abs_error": 3.402877807312521e-07
+    },
+    {
+      "context": 88,
+      "query": "Q0199",
+      "full_length": 206,
+      "unmodified_forward_abs_error": 7.152557373046875e-07,
+      "max_published_direct_abs_error": 2.8134387512201986e-05
+    },
+    {
+      "context": 89,
+      "query": "Q0200",
+      "full_length": 198,
+      "unmodified_forward_abs_error": 4.589557647705078e-06,
+      "max_published_direct_abs_error": 3.799365234424812e-06
+    },
+    {
+      "context": 90,
+      "query": "Q0201",
+      "full_length": 96,
+      "unmodified_forward_abs_error": 3.2186508178710938e-06,
+      "max_published_direct_abs_error": 5.658152923593285e-05
+    },
+    {
+      "context": 91,
+      "query": "Q0202",
+      "full_length": 96,
+      "unmodified_forward_abs_error": 1.6689300537109375e-06,
+      "max_published_direct_abs_error": 1.6417367553867024e-05
+    }
+  ],
+  "max_published_direct_abs_error": 0.00031685433349615266,
+  "checkpoint_sha256": "989f454dc53f890923f5364147c3c6d54612630c85d30d60445921d5b5940810",
+  "encoder": "Frozen ESM2 t33 650M layer33 FP32",
+  "janus": "Published fine-tuned antisymmetric checkpoint; no fitting",
+  "sequence": "Full-length JanusDDG sequences; same temporary changes at original window coordinates",
+  "paths": "Identical plan.pkl from completed MSA experiment",
+  "plan_sha256": "87160d5007917cce666911f9dfd117c5b2ad19d703a799b3be7a14adc99cfbf8",
+  "n_states": 196196,
+  "n_edges": 229558,
+  "n_paths": 33450,
+  "ensemble": "Fixed equal-weight mean of frozen JanusDDG and EvoPhi-DDG on each edge",
+  "no_experimental_labels": true,
+  "feature_cache": "FP32 conv1d and position-encoded conv1d_wild, no reduced precision",
+  "estimated_conv_cache_GB": 78.385547264
+}

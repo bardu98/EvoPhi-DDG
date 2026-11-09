@@ -1,0 +1,26 @@
+{
+  "n_variants": 461,
+  "n_WT_sequences": 46,
+  "n_protein_ids": 48,
+  "exact_context_reused": 460,
+  "new_context_evaluated": 1,
+  "changed_labels_among_exact_matches": 38,
+  "input_sha256": "03c3418fe2ceafe9a65ced8bf3bcbfc9b09374dc089dda71380423e9d4fecefc",
+  "new_context_checks": [
+    {
+      "code": "S461_0230",
+      "msa_query_matches": true,
+      "depth": 58,
+      "length": 273,
+      "forward": -0.10298776626586914,
+      "reverse": -0.11179320514202118,
+      "alignment_sha256": "dd8c6476464306861459f8d783500458742907790d44866f377ae3e31e0f3477",
+      "janus_original_checkpoint_prediction": -0.7456748485565186,
+      "janus_published_prediction": -0.7456357,
+      "janus_abs_error": 3.914855651854232e-05
+    }
+  ],
+  "relation_to_S669": "Curated subset, not independent; one N-terminal methionine sequence-context difference",
+  "no_fitting_or_new_alignment_search": true,
+  "s669_label_reference": "JanusDDG distributed S669 labels"
+}

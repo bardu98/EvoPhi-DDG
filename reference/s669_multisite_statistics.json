@@ -1,0 +1,401 @@
+{
+  "protocol": {
+    "dataset": "S669",
+    "n_variants": 669,
+    "n_protein_groups": 87,
+    "n_contexts": 92,
+    "n_states": 196196,
+    "n_directed_edges": 229558,
+    "n_paths": 33450,
+    "n_intermediates": [
+      2,
+      4,
+      6,
+      8,
+      10
+    ],
+    "repeats": 10,
+    "seed": 42,
+    "no_experimental_labels": true,
+    "uncertainty": "5000 paired whole-WT-protein bootstrap resamples, seed42; mean of ten replicate RMSEs; all repeats retained together"
+  },
+  "summary": [
+    {
+      "model": "MSAesm_ddG original",
+      "n_intermediates": 2,
+      "pearson_mean": 0.928593628836056,
+      "pearson_std": 0.004950731896290439,
+      "closure_mae_mean": 0.2178448889482945,
+      "closure_rmse_mean": 0.3320651429036207,
+      "closure_rmse_std": 0.010973697086204553,
+      "max_absolute_closure": 1.7816082898849444
+    },
+    {
+      "model": "MSAesm_ddG antisymmetric",
+      "n_intermediates": 2,
+      "pearson_mean": 0.9989212984088173,
+      "pearson_std": 0.00026152947480416564,
+      "closure_mae_mean": 0.018246753698452318,
+      "closure_rmse_mean": 0.04166653193182297,
+      "closure_rmse_std": 0.004840560149395529,
+      "max_absolute_closure": 0.6658362547801455
+    },
+    {
+      "model": "EvoPhi-DDG",
+      "n_intermediates": 2,
+      "pearson_mean": 0.9989208646203181,
+      "pearson_std": 0.0002617224654986489,
+      "closure_mae_mean": 0.01825806230292349,
+      "closure_rmse_mean": 0.04168777189331135,
+      "closure_rmse_std": 0.004845615905179203,
+      "max_absolute_closure": 0.6665354537037196
+    },
+    {
+      "model": "MSAesm_ddG original",
+      "n_intermediates": 4,
+      "pearson_mean": 0.8663812050589923,
+      "pearson_std": 0.008111770929243462,
+      "closure_mae_mean": 0.34364209386691213,
+      "closure_rmse_mean": 0.48648627676763895,
+      "closure_rmse_std": 0.018756608384787325,
+      "max_absolute_closure": 2.841177946691666
+    },
+    {
+      "model": "MSAesm_ddG antisymmetric",
+      "n_intermediates": 4,
+      "pearson_mean": 0.9976330488746701,
+      "pearson_std": 0.0005424024404878624,
+      "closure_mae_mean": 0.03098344572512058,
+      "closure_rmse_mean": 0.061813902568270185,
+      "closure_rmse_std": 0.006686648296453392,
+      "max_absolute_closure": 1.1308391513996328
+    },
+    {
+      "model": "EvoPhi-DDG",
+      "n_intermediates": 4,
+      "pearson_mean": 0.9976328544974864,
+      "pearson_std": 0.000542946127286637,
+      "closure_mae_mean": 0.030996603113289185,
+      "closure_rmse_mean": 0.06183552368928961,
+      "closure_rmse_std": 0.006694972416383286,
+      "max_absolute_closure": 1.131457923641788
+    },
+    {
+      "model": "MSAesm_ddG original",
+      "n_intermediates": 6,
+      "pearson_mean": 0.8023441920842578,
+      "pearson_std": 0.011463561828630356,
+      "closure_mae_mean": 0.4561663802697824,
+      "closure_rmse_mean": 0.6252044648623496,
+      "closure_rmse_std": 0.023878800057984824,
+      "max_absolute_closure": 3.532352852483453
+    },
+    {
+      "model": "MSAesm_ddG antisymmetric",
+      "n_intermediates": 6,
+      "pearson_mean": 0.9964982552954457,
+      "pearson_std": 0.0006780113723561244,
+      "closure_mae_mean": 0.041104184573999746,
+      "closure_rmse_mean": 0.07528934896239729,
+      "closure_rmse_std": 0.007138013815380886,
+      "max_absolute_closure": 0.9637738049037878
+    },
+    {
+      "model": "EvoPhi-DDG",
+      "n_intermediates": 6,
+      "pearson_mean": 0.99649648556505,
+      "pearson_std": 0.0006793013533458202,
+      "closure_mae_mean": 0.041122745237048446,
+      "closure_rmse_mean": 0.07533124123376003,
+      "closure_rmse_std": 0.007149277264697228,
+      "max_absolute_closure": 0.9628423815079308
+    },
+    {
+      "model": "MSAesm_ddG original",
+      "n_intermediates": 8,
+      "pearson_mean": 0.7443139246936962,
+      "pearson_std": 0.015596247540002139,
+      "closure_mae_mean": 0.5519602757684207,
+      "closure_rmse_mean": 0.7531276905184306,
+      "closure_rmse_std": 0.01697303905797291,
+      "max_absolute_closure": 3.8928284332757226
+    },
+    {
+      "model": "MSAesm_ddG antisymmetric",
+      "n_intermediates": 8,
+      "pearson_mean": 0.9954083016864438,
+      "pearson_std": 0.0007888814276565358,
+      "closure_mae_mean": 0.05047895093736503,
+      "closure_rmse_mean": 0.08636257787212823,
+      "closure_rmse_std": 0.00726340477448876,
+      "max_absolute_closure": 0.9185480998075504
+    },
+    {
+      "model": "EvoPhi-DDG",
+      "n_intermediates": 8,
+      "pearson_mean": 0.9954074056468134,
+      "pearson_std": 0.0007898749652030804,
+      "closure_mae_mean": 0.05050408693897977,
+      "closure_rmse_mean": 0.08639742081900303,
+      "closure_rmse_std": 0.007273337516708935,
+      "max_absolute_closure": 0.9190304000510884
+    },
+    {
+      "model": "MSAesm_ddG original",
+      "n_intermediates": 10,
+      "pearson_mean": 0.6955765897005998,
+      "pearson_std": 0.01840341933331983,
+      "closure_mae_mean": 0.6505391050299631,
+      "closure_rmse_mean": 0.8790517362866843,
+      "closure_rmse_std": 0.02257529255071369,
+      "max_absolute_closure": 4.412839453909383
+    },
+    {
+      "model": "MSAesm_ddG antisymmetric",
+      "n_intermediates": 10,
+      "pearson_mean": 0.9927937479481015,
+      "pearson_std": 0.0012238801691466237,
+      "closure_mae_mean": 0.06145550873919423,
+      "closure_rmse_mean": 0.10803628904938609,
+      "closure_rmse_std": 0.00920518632236093,
+      "max_absolute_closure": 1.3695545752194378
+    },
+    {
+      "model": "EvoPhi-DDG",
+      "n_intermediates": 10,
+      "pearson_mean": 0.9927921640171569,
+      "pearson_std": 0.0012228987060326861,
+      "closure_mae_mean": 0.06148079379183959,
+      "closure_rmse_mean": 0.10808291437851314,
+      "closure_rmse_std": 0.009201276979387642,
+      "max_absolute_closure": 1.3693046747414126
+    },
+    {
+      "model": "JanusDDG",
+      "n_intermediates": 2,
+      "pearson_mean": 0.9980881435160246,
+      "pearson_std": 0.0010238894478936816,
+      "closure_mae_mean": 0.02160812489631315,
+      "closure_rmse_mean": 0.0542300690186144,
+      "closure_rmse_std": 0.014064763898019316,
+      "max_absolute_closure": 1.8426274061203003
+    },
+    {
+      "model": "Ensemble EvoPhi-DDG",
+      "n_intermediates": 2,
+      "pearson_mean": 0.9990756957203389,
+      "pearson_std": 0.0003091823481392394,
+      "closure_mae_mean": 0.015468879754646522,
+      "closure_rmse_mean": 0.0348541867781155,
+      "closure_rmse_std": 0.005712897115683344,
+      "max_absolute_closure": 0.9166155073140688
+    },
+    {
+      "model": "JanusDDG",
+      "n_intermediates": 4,
+      "pearson_mean": 0.9957768390388667,
+      "pearson_std": 0.001396653014274379,
+      "closure_mae_mean": 0.03371633166859343,
+      "closure_rmse_mean": 0.08211001359818527,
+      "closure_rmse_std": 0.013856119723880888,
+      "max_absolute_closure": 2.0418220162391663
+    },
+    {
+      "model": "Ensemble EvoPhi-DDG",
+      "n_intermediates": 4,
+      "pearson_mean": 0.9979792106967695,
+      "pearson_std": 0.00048272192491501424,
+      "closure_mae_mean": 0.024956160483933974,
+      "closure_rmse_mean": 0.05185658424643965,
+      "closure_rmse_std": 0.006175940615596563,
+      "max_absolute_closure": 1.0760301831011998
+    },
+    {
+      "model": "JanusDDG",
+      "n_intermediates": 6,
+      "pearson_mean": 0.9942319946528777,
+      "pearson_std": 0.004358236476026116,
+      "closure_mae_mean": 0.04214325068457262,
+      "closure_rmse_mean": 0.0931196815216912,
+      "closure_rmse_std": 0.029372316011125412,
+      "max_absolute_closure": 3.683164946734905
+    },
+    {
+      "model": "Ensemble EvoPhi-DDG",
+      "n_intermediates": 6,
+      "pearson_mean": 0.9972337156302598,
+      "pearson_std": 0.0014566678897589113,
+      "closure_mae_mean": 0.03137745826042736,
+      "closure_rmse_mean": 0.05969107015197852,
+      "closure_rmse_std": 0.013476147912097568,
+      "max_absolute_closure": 1.889632399577109
+    },
+    {
+      "model": "JanusDDG",
+      "n_intermediates": 8,
+      "pearson_mean": 0.9817750811849983,
+      "pearson_std": 0.010522976549564243,
+      "closure_mae_mean": 0.05569887200613349,
+      "closure_rmse_mean": 0.16660171721273806,
+      "closure_rmse_std": 0.05433703893817706,
+      "max_absolute_closure": 5.300103530287743
+    },
+    {
+      "model": "Ensemble EvoPhi-DDG",
+      "n_intermediates": 8,
+      "pearson_mean": 0.9928258179571016,
+      "pearson_std": 0.0031809473849079626,
+      "closure_mae_mean": 0.04069732927795548,
+      "closure_rmse_mean": 0.09581535010821059,
+      "closure_rmse_std": 0.02252362152537927,
+      "max_absolute_closure": 2.700531856709434
+    },
+    {
+      "model": "JanusDDG",
+      "n_intermediates": 10,
+      "pearson_mean": 0.9833602897480963,
+      "pearson_std": 0.015940546319720594,
+      "closure_mae_mean": 0.060701949426539545,
+      "closure_rmse_mean": 0.15636133958720994,
+      "closure_rmse_std": 0.06524497198739893,
+      "max_absolute_closure": 7.674501746892929
+    },
+    {
+      "model": "Ensemble EvoPhi-DDG",
+      "n_intermediates": 10,
+      "pearson_mean": 0.9924366308417655,
+      "pearson_std": 0.005378753937030028,
+      "closure_mae_mean": 0.04674648357409416,
+      "closure_rmse_mean": 0.09724716343074274,
+      "closure_rmse_std": 0.02898214446757236,
+      "max_absolute_closure": 3.843039183867509
+    }
+  ],
+  "paired": {
+    "2": {
+      "JanusDDG": {
+        "rmse_gain": 0.019375882240498903,
+        "ci95": [
+          0.007800440064389311,
+          0.03189249623019768
+        ],
+        "percent_reduction": 35.72903850417036,
+        "n_proteins_improved": 69
+      },
+      "EvoPhi-DDG": {
+        "rmse_gain": 0.006833585115195842,
+        "ci95": [
+          -0.005895850009429504,
+          0.01637645229694572
+        ],
+        "percent_reduction": 16.392301158921537,
+        "n_proteins_improved": 55
+      },
+      "closure_error_correlation": 0.021468156094208816,
+      "ensemble_rmse_ci95": [
+        0.026270437242082525,
+        0.04555194864340479
+      ]
+    },
+    "4": {
+      "JanusDDG": {
+        "rmse_gain": 0.030253429351745596,
+        "ci95": [
+          0.011215854524723592,
+          0.05043068596884191
+        ],
+        "percent_reduction": 36.84499371756801,
+        "n_proteins_improved": 66
+      },
+      "EvoPhi-DDG": {
+        "rmse_gain": 0.009978939442849943,
+        "ci95": [
+          -0.007560821215016455,
+          0.02279086017915482
+        ],
+        "percent_reduction": 16.13787487754126,
+        "n_proteins_improved": 60
+      },
+      "closure_error_correlation": 0.010857229049756667,
+      "ensemble_rmse_ci95": [
+        0.04048282293328306,
+        0.06638334675896097
+      ]
+    },
+    "6": {
+      "JanusDDG": {
+        "rmse_gain": 0.03342861136971267,
+        "ci95": [
+          0.014986488476767703,
+          0.054270205059493905
+        ],
+        "percent_reduction": 35.898545638738945,
+        "n_proteins_improved": 69
+      },
+      "EvoPhi-DDG": {
+        "rmse_gain": 0.015640171081781527,
+        "ci95": [
+          -0.002596406766789682,
+          0.03015238591974531
+        ],
+        "percent_reduction": 20.761865629226232,
+        "n_proteins_improved": 68
+      },
+      "closure_error_correlation": -0.01753269015106925,
+      "ensemble_rmse_ci95": [
+        0.04688239280679576,
+        0.07483454385979274
+      ]
+    },
+    "8": {
+      "JanusDDG": {
+        "rmse_gain": 0.07078636710452746,
+        "ci95": [
+          0.021135033644207376,
+          0.11397159549374093
+        ],
+        "percent_reduction": 42.48837784435229,
+        "n_proteins_improved": 73
+      },
+      "EvoPhi-DDG": {
+        "rmse_gain": -0.009417929289207552,
+        "ci95": [
+          -0.0484193475696589,
+          0.026426581141677258
+        ],
+        "percent_reduction": -10.900706525646752,
+        "n_proteins_improved": 64
+      },
+      "closure_error_correlation": 0.022378667392319154,
+      "ensemble_rmse_ci95": [
+        0.05890068225557054,
+        0.13371446326736894
+      ]
+    },
+    "10": {
+      "JanusDDG": {
+        "rmse_gain": 0.05911417615646719,
+        "ci95": [
+          0.018168423493178414,
+          0.10036200833123474
+        ],
+        "percent_reduction": 37.80613309691971,
+        "n_proteins_improved": 68
+      },
+      "EvoPhi-DDG": {
+        "rmse_gain": 0.010835750947770395,
+        "ci95": [
+          -0.025243464492809942,
+          0.03999556451416124
+        ],
+        "percent_reduction": 10.025405967332558,
+        "n_proteins_improved": 65
+      },
+      "closure_error_correlation": 0.022382930769407915,
+      "ensemble_rmse_ci95": [
+        0.06805672251045275,
+        0.13001125881014947
+      ]
+    }
+  }
+}
