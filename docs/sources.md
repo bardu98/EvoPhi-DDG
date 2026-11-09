@@ -7,7 +7,7 @@
 | MSAesm_ddG | [RitAreaSciencePark/PLM4Muts](https://github.com/RitAreaSciencePark/PLM4Muts) | `6bbbdeda629d3b62e2f26d7fd3231979a3a1784a` |
 | JanusDDG | [compbiomed-unito/JanusDDG](https://github.com/compbiomed-unito/JanusDDG) | `7ef53fde72c9b9b715b0a9f2f80910ebf927bd59` |
 
-The primary predictions use their published checkpoint weights. Checkpoint hashes and acquisition details are in [inference.md](inference.md). The full upstream repositories, weights, training datasets, virtual environments and temporary inference caches are not bundled here.
+The primary predictions use their published checkpoint weights. Checkpoint hashes and acquisition details are in [inference.md](inference.md). Ready-to-use converted checkpoints are supplied through repository releases for the [unified inference pipeline](../inference/README.md). The full upstream repositories, training datasets, virtual environments and temporary inference caches are not bundled here.
 
 The MSAesm_ddG source uses AGPL-3.0-or-later notices. The analysis and EvoPhi-DDG code in this repository is released under the same license, supplied as `LICENSE`. JanusDDG is distributed under MIT; its upstream license is preserved in `docs/JanusDDG-LICENSE`. Third-party software retains its own license.
 

@@ -19,6 +19,27 @@ See [all regression metrics](docs/results.md), [unrounded numerical results](res
 
 ![Experimental versus predicted stability changes](figures/accuracy.png)
 
+## Predict your own variants
+
+The [ready-to-use inference pipeline](inference/README.md) starts from your WT sequence and mutations, finds and filters the MSA, runs both models and returns **EvoPhi-DDG, JanusDDG and ensemble DDG** in one CSV. Ready-to-use weights are supplied in the [checkpoint release](https://github.com/bardu98/EvoPhi-DDG/releases/tag/checkpoints-v1) and downloaded automatically on first use.
+
+Install once from the repository directory:
+
+```bash
+conda env create -f inference/environment.yml
+conda activate evophi-ddg
+```
+
+Then predict a variant:
+
+```bash
+python inference/run.py --fasta my_protein.fasta --mutations K13A --output predictions.csv
+```
+
+Positions refer to the exact sequence in your FASTA, starting at 1. Join substitutions within one multiple mutant with underscores, such as `K13A_L22V`; separate different variants with spaces. For a working example, use `inference/examples/protein.fasta` with `K13A`, or run `--input inference/examples/variants.csv`.
+
+The output columns are `DDG_EvoPhi_DDG`, `DDG_JanusDDG` and `DDG_Ensemble`, in kcal/mol, with positive values indicating stabilization. The first use downloads the model weights and ESM2 backbone; subsequent runs reuse them. A GPU is recommended and CPU inference is supported. New sequences are sent to the public ColabFold service for alignment search; existing alignments can be supplied for local or offline use. See the [inference guide](inference/README.md) for batch inputs, caching, supported sequence lengths and access to weights while the repository is private.
+
 ## Reproduce figures and tables
 
 Use Python 3.11. From the repository directory:
@@ -67,6 +88,7 @@ The optional [inference script](docs/inference.md) accepts prefiltered MSAs and 
 | `generated/` | LaTeX tables, statistical JSON files and provenance records |
 | `reference/` | Frozen numerical outputs checked by the verification script |
 | `evophi/` | Potential readout and multiple-substitution projection |
+| `inference/` | Complete sequence-to-prediction workflow, setup, examples and checkpoint downloads |
 | `scripts/` | Reproduction, verification and inference entry points |
 | `docs/` | Methods, parameters, data definitions and source attribution |
 
@@ -81,4 +103,4 @@ Further references are in [references.bib](references.bib). The EvoPhi-DDG manus
 
 ## License
 
-Repository code is distributed under [AGPL-3.0-or-later](LICENSE). Original model weights, upstream code and benchmark data retain their respective licenses and attribution. Model checkpoints are not bundled. See [source and license notes](docs/sources.md).
+Repository code is distributed under [AGPL-3.0-or-later](LICENSE). Original model weights, upstream code and benchmark data retain their respective licenses and attribution. Ready-to-use model checkpoints are distributed through repository releases. See [source and license notes](docs/sources.md) and the [inference guide](inference/README.md).

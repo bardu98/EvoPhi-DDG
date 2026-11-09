@@ -1,0 +1,24 @@
+{
+  "format_version": 1,
+  "assets": {
+    "evophi": {
+      "filename": "evophi-ddg.pt",
+      "bytes": 462585221,
+      "sha256": "3477b986c6296418e66ab263af0a4f82020ebd2144a77ddc6ded1f7db4c89ab3",
+      "url": "https://github.com/bardu98/EvoPhi-DDG/releases/download/checkpoints-v1/evophi-ddg.pt",
+      "asset_id": 728208896
+    },
+    "janus": {
+      "filename": "janusddg.pt",
+      "bytes": 29706404,
+      "sha256": "0d21f59818f070236238752db874f0d2149641927e9dd444b93d6edcffcbba41",
+      "url": "https://github.com/bardu98/EvoPhi-DDG/releases/download/checkpoints-v1/janusddg.pt",
+      "asset_id": 728208891
+    }
+  },
+  "sources": {
+    "msa_sha256": "30c5534f2985e7026b3a714e0089879bcbd52f14d6e023a2fdded57af97476f2",
+    "janus_sha256": "989f454dc53f890923f5364147c3c6d54612630c85d30d60445921d5b5940810"
+  },
+  "release_url": "https://github.com/bardu98/EvoPhi-DDG/releases/tag/checkpoints-v1"
+}

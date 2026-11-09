@@ -1,0 +1,51 @@
+{
+  "offline_real_examples": [
+    {
+      "dataset": "s96",
+      "code": "2kj3A-K13A",
+      "evophi": -0.7504415241741798,
+      "janus": 0.468634694814682,
+      "ensemble": -0.1409034146797488,
+      "evophi_absolute_difference": 3.708309415095812e-08,
+      "janus_absolute_difference": 1.755481468201925e-05
+    },
+    {
+      "dataset": "ptmul_nr",
+      "code": "P00099-F29A_V35M_F56Y_E65Y",
+      "evophi": 0.9551990784634694,
+      "janus": 1.215088963508606,
+      "ensemble": 1.0851440209860377,
+      "evophi_absolute_difference": 2.3113190250612092e-09,
+      "janus_absolute_difference": 6.546350860592298e-05
+    }
+  ],
+  "filter_check": {
+    "version": "HHfilter 3.3.0",
+    "query": "S96 2kj3A",
+    "filtered_rows": 88,
+    "all_sequences_match_archived_alignment": true
+  },
+  "live_check": {
+    "server": "https://api.colabfold.com",
+    "input": "inference/examples/protein.fasta",
+    "mutation": "K13A",
+    "msa_complete": true,
+    "hhfilter_applied": true,
+    "evophi": -0.7504415241741798,
+    "janus": 0.468634694814682,
+    "ensemble": -0.1409034146797488
+  },
+  "checkpoint_export": {
+    "janus_same_input_embeddings_match_original_forward_exactly": true
+  },
+  "asset_download": {
+    "both_release_assets_downloaded_and_sha256_verified": true
+  },
+  "device": "NVIDIA RTX 4090, FP32 encoders, FP64 potential",
+  "experimental_labels": "Frozen JanusDDG reference; no fitting",
+  "environment_dry_run": {
+    "conda_packages_resolved": 30,
+    "pip_requirements_reported": true
+  },
+  "torch_version_tested": "2.2.1+cu121"
+}

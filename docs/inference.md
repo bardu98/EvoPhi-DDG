@@ -1,5 +1,7 @@
 # Inference and alignment preparation
 
+For automatic checkpoint retrieval, MSA search and filtering, both models and the ensemble in one command, use the [unified inference pipeline](../inference/README.md). This page documents the original lower-level EvoPhi-DDG script and benchmark protocol.
+
 ## Published weights
 
 The reproduction workflow uses frozen scores, so it does not need model weights. To run inference on new inputs, obtain the original MSAesm_ddG `MSA_Finetuning.pt` checkpoint from [Zenodo record 14026821](https://zenodo.org/records/14026821). The original checkpoint used for this work has SHA256:

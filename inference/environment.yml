@@ -1,0 +1,16 @@
+name: evophi-ddg
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.11
+  - hhsuite=3.3.0
+  - perl
+  - gh
+  - pip
+  - pip:
+      - numpy==1.24.2
+      - pandas==2.0.3
+      - requests>=2.31,<3
+      - torch==2.5.1
+      - fair-esm==2.0.0
