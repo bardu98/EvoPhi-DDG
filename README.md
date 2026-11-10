@@ -21,6 +21,8 @@ See [all regression metrics](docs/results.md), [unrounded numerical results](res
 
 ## Predict your own variants
 
+Prefer a graphical interface? Download and extract this repository, then open **`Start EvoPhi-DDG.sh`** on Linux or **`Start EvoPhi-DDG.bat`** on Windows with WSL2. The guided launcher prepares the environment and opens a local browser interface for sequences, FASTA files and batch CSVs. See the [app guide](gui/README.md) for installation and supported platforms.
+
 The [ready-to-use inference pipeline](inference/README.md) starts from your WT sequence and mutations, finds and filters the MSA, runs both models and returns **EvoPhi-DDG, JanusDDG and ensemble DDG** in one CSV. Ready-to-use weights are supplied in the [checkpoint release](https://github.com/bardu98/EvoPhi-DDG/releases/tag/checkpoints-v1) and downloaded automatically on first use.
 
 Install once from the repository directory:
@@ -89,6 +91,7 @@ The optional [inference script](docs/inference.md) accepts prefiltered MSAs and 
 | `reference/` | Frozen numerical outputs checked by the verification script |
 | `evophi/` | Potential readout and multiple-substitution projection |
 | `inference/` | Complete sequence-to-prediction workflow, setup, examples and checkpoint downloads |
+| `gui/` | Local browser interface, guided launcher and persistent prediction jobs |
 | `scripts/` | Reproduction, verification and inference entry points |
 | `docs/` | Methods, parameters, data definitions and source attribution |
 

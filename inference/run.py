@@ -4,6 +4,7 @@ import argparse
 import json
 import os
 import sys
+import time
 
 ROOT=Path(__file__).resolve().parent.parent
 sys.path.insert(0,str(ROOT))
@@ -29,6 +30,7 @@ def arguments():
     parser.add_argument('--msa',type=Path,help='Optional existing MSA; valid for inputs with one WT sequence')
     parser.add_argument('--msa-filtered',action='store_true',help='Explicitly use supplied MSAs as already filtered; skip HHfilter')
     parser.add_argument('--esm2-checkpoint',type=Path,help='Optional local ESM2 checkpoint for offline use')
+    parser.add_argument('--progress-file',type=Path,help='Optional machine-readable progress file for the local interface')
     return parser.parse_args()
 
 
@@ -60,8 +62,15 @@ def load_inputs(args):
 
 def main():
     args=arguments()
+    def progress(stage,completed=0,total=0,error=None):
+        if args.progress_file:
+            args.progress_file.parent.mkdir(parents=True,exist_ok=True)
+            target=args.progress_file;tmp=target.with_suffix('.tmp')
+            tmp.write_text(json.dumps(dict(stage=stage,completed=completed,total=total,error=error,updated=time.time()))+'\n')
+            tmp.replace(target)
     try:
         records=load_inputs(args)  # Reject invalid coordinates before network activity.
+        progress('checking',total=len(records))
         import shutil
         if not args.msa_filtered and not shutil.which(args.hhfilter):
             raise FileNotFoundError('HHfilter is missing. Create/activate the environment from inference/environment.yml.')
@@ -77,8 +86,11 @@ def main():
         print(f'Predicting {len(records)} variant(s) on {device}. Positive DDG means stabilizing; units are kcal/mol.',flush=True)
         args.cache.mkdir(parents=True,exist_ok=True)
         args.output.parent.mkdir(parents=True,exist_ok=True)
+        progress('models',total=2)
         weights,manifest=ensure_weights(args.weights)
         alignments={};provenance=[]
+        n_contexts=len({(row['Sequence'],str(row['msa'])) for row in records})
+        progress('alignments',total=n_contexts)
         for row in records:
             key=(row['Sequence'],str(row['msa']))
             if key not in alignments:
@@ -86,7 +98,9 @@ def main():
                 alignments[key],meta=get_alignment(row['Sequence'],args.cache,args.hhfilter,args.msa_server.rstrip('/'),
                     args.max_msa_wait,args.poll_seconds,row['msa'],args.msa_filtered)
                 provenance.append(meta)
+                progress('alignments',completed=len(alignments),total=n_contexts)
         print('Running EvoPhi-DDG…',flush=True)
+        progress('evophi',total=len(records))
         model=EvoPhi(weights['evophi'],device)
         output=[]
         for row in records:
@@ -94,9 +108,11 @@ def main():
             output.append(dict(ID=row['ID'],Sequence=row['Sequence'],MTS=row['MTS'],DDG_EvoPhi_DDG=value,
                                msa_depth=depth,msa_window_start=row['left']+1,msa_window_end=row['right']))
             print(f'{row["ID"]} {row["MTS"]}: EvoPhi-DDG {value:.2f}',flush=True)
+            progress('evophi',completed=len(output),total=len(records))
         del model
         if device=='cuda':torch.cuda.empty_cache()
         print('Running JanusDDG (first use also downloads ESM2)…',flush=True)
+        progress('janus',total=len(records))
         model=Janus(weights['janus'],device,args.cache,args.esm2_checkpoint)
         partial=args.output.with_name(args.output.stem+'.partial.csv')
         for index,(row,result) in enumerate(zip(records,output)):
@@ -105,6 +121,7 @@ def main():
             result['DDG_Ensemble']=(result['DDG_EvoPhi_DDG']+value)/2
             pd.DataFrame(output[:index+1]).to_csv(partial,index=False)
             print(f'{row["ID"]} {row["MTS"]}: JanusDDG {value:.2f}, ensemble {result["DDG_Ensemble"]:.2f}',flush=True)
+            progress('janus',completed=index+1,total=len(records))
         # Preserve full numerical precision in CSV; console display uses two decimals.
         partial.replace(args.output)
         report=dict(models='Published frozen JanusDDG and zero-hidden-bias EvoPhi-DDG; no training or calibration',
@@ -114,7 +131,9 @@ def main():
             checkpoints={name:sha256(path) for name,path in weights.items()},release=manifest['release_url'],alignments=provenance)
         args.output.with_suffix('.provenance.json').write_text(json.dumps(report,indent=2)+'\n')
         print(f'Predictions saved to {args.output}',flush=True)
+        progress('complete',completed=len(records),total=len(records))
     except Exception as error:
+        progress('failed',error=str(error))
         print(f'Error: {error}',file=sys.stderr,flush=True)
         if os.environ.get('EVOPHI_DEBUG'):raise
         return 1

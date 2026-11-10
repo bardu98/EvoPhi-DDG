@@ -1,0 +1,43 @@
+{
+  "platform_tested": "Ubuntu 24.04, Linux x86_64, NVIDIA RTX 4090",
+  "streamlit": "1.50.0",
+  "browser": "Chromium via Playwright 1.65.0",
+  "real_single_variant_prediction_and_csv_download": true,
+  "browser_refresh_did_not_duplicate_job": true,
+  "real_two_protein_batch_download": true,
+  "fasta_identifier_to_variant_mapping": true,
+  "active_calculation_cancelled_through_interface": true,
+  "guided_setup_first_install_and_reuse_test": true,
+  "conda_packages_resolved": 30,
+  "unit_and_interface_tests": 7,
+  "results": [
+    {
+      "ID": "single_example",
+      "Sequence": "MKIDAIVGRNSAKDIRTEERARVQLGNVVTAAALHGGIRISDQTTNSVETVVGKGESRVLIGNEYGGKGFWDNHHHHHH",
+      "MTS": "K13A",
+      "DDG_EvoPhi_DDG": -0.7504415241741798,
+      "msa_depth": 88,
+      "msa_window_start": 1,
+      "msa_window_end": 79,
+      "DDG_JanusDDG": 0.468634694814682,
+      "DDG_Ensemble": -0.1409034146797488
+    },
+    {
+      "ID": "multiple_example",
+      "Sequence": "MKPYALLSLLATGTLLAQGAWAEDPEVLFKNKGCVACHAIDTKMVGPAYKDVAAKFAGQAGAEAELAQRIKNGSQGVWGPIPMPPNAVSDDEAQTLAKWVLSQK",
+      "MTS": "F29A_V35M_F56Y_E65Y",
+      "DDG_EvoPhi_DDG": 0.9551990784634694,
+      "msa_depth": 152,
+      "msa_window_start": 1,
+      "msa_window_end": 104,
+      "DDG_JanusDDG": 1.215088963508606,
+      "DDG_Ensemble": 1.0851440209860377
+    }
+  ],
+  "comparison": {
+    "evophi_max_absolute_difference": 1e-06,
+    "janus_max_absolute_difference": 0.0001,
+    "reference": "Frozen S96 and PTmul-NR predictions distributed in data/; no training or calibration"
+  },
+  "platform_limits": "Windows/WSL launcher supplied but not executed on Windows; macOS unvalidated"
+}
