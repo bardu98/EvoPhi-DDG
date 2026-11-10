@@ -60,10 +60,20 @@ def save_checkpoint(upload,manifest):
     tmp.replace(target)
 
 
+def needs_github_login(error):
+    text=str(error or '')
+    return ('GitHub CLI is not signed in' in text or ('gh' in text and 'exit status 4' in text))
+
+
 if 'active_job' not in st.session_state:
     candidate=st.query_params.get('job')
     try:st.session_state.active_job=candidate if candidate and jobs.folder(candidate).exists() else None
     except ValueError:st.session_state.active_job=None
+
+checkpoint_help=False
+if st.session_state.active_job:
+    try:checkpoint_help=needs_github_login(jobs.read(st.session_state.active_job).get('error'))
+    except (OSError,ValueError):pass
 
 with st.sidebar:
     st.markdown('### EvoPhi-DDG')
@@ -85,7 +95,7 @@ with st.sidebar:
         if st.button('Open selected run',disabled=selected is None):
             st.session_state.active_job=selected;st.query_params['job']=selected;st.rerun()
     st.divider()
-    with st.expander('Model files'):
+    with st.expander('Model files',expanded=checkpoint_help):
         manifest=json.loads((ROOT/'inference/weights.json').read_text())
         for name,item in manifest['assets'].items():
             present=(ROOT/'inference/weights'/item['filename']).exists()
@@ -217,8 +227,14 @@ def progress_panel():
     elif status=='cancelled':
         st.info('This run was stopped. Its completed alignment searches remain cached.')
     else:
-        st.error(state.get('error') or 'The calculation stopped before completion.')
-        if 'download' in (state.get('error') or '').lower():st.caption('For this private preview, you can add the released files under Model files in the sidebar.')
+        if needs_github_login(state.get('error')):
+            st.error('GitHub authentication is needed to download the private model files on this computer.')
+            st.write('Open Model files in the sidebar, download both checkpoints in your browser, and use Verify and save checkpoint for each file. Then retry this run.')
+            st.link_button('Download checkpoints in browser',manifest['release_url'])
+            st.caption('Signing in on the GitHub website does not sign in GitHub CLI. For automatic downloads, you can also run gh auth login in the prediction environment.')
+        else:
+            st.error(state.get('error') or 'The calculation stopped before completion.')
+            if 'download' in (state.get('error') or '').lower():st.caption('For this private preview, you can add the released files under Model files in the sidebar.')
     if status in ['failed','cancelled']:
         if st.button('Retry using cached work',key='retry_run'):
             new=jobs.retry(identifier);st.session_state.active_job=new;st.query_params['job']=new;st.rerun()

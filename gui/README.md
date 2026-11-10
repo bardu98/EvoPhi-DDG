@@ -55,6 +55,8 @@ You may refresh or close the browser tab without starting a duplicate calculatio
 
 Both ready-to-use checkpoints are downloaded and SHA256-verified automatically. The ESM2 backbone is also downloaded on first use. While the repository is private, GitHub authentication may be required. As an alternative, open **Model files** in the sidebar, download the two files from the linked checkpoint release in your browser, and upload them there. The app checks their hashes before saving them.
 
+If a model download reports GitHub CLI exit status **4**, the command-line client is not signed in on that computer. Your browser's GitHub login is separate. You can resolve this entirely in the interface: download `evophi-ddg.pt` and `janusddg.pt` from the release, add each under **Model files**, click **Verify and save checkpoint**, then **Retry using cached work**. Alternatively, run `gh auth login` in the prediction environment to enable authenticated automatic downloads.
+
 New homology searches send WT sequences to the public ColabFold service. In single-protein mode, **Use an existing alignment** lets you upload an alignment instead. By default it receives the same HHfilter treatment as online results; mark it already filtered only when it has been prepared with the intended protocol. Its first row must match the complete WT sequence.
 
 The same sequence-length limits, alignment protocol, fixed homolog contexts, zero-bias EvoPhi-DDG readout and multiple-substitution construction documented in [inference/README.md](../inference/README.md) apply. Batch inputs with precomputed local alignments remain available through the command-line workflow.

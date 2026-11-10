@@ -41,9 +41,20 @@ def ensure_weights(folder):
                     f'from {manifest["release_url"]} into {folder}, or authenticate GitHub CLI with gh auth login. '
                     'For offline use, copy both checkpoint files into that folder.') from download_error
             asset_id=item['asset_id']
-            with tmp.open('wb') as out:
-                subprocess.run(['gh','api',f'repos/bardu98/EvoPhi-DDG/releases/assets/{asset_id}',
-                                '-H','Accept: application/octet-stream'],stdout=out,check=True)
+            instructions=(f'Download evophi-ddg.pt and janusddg.pt from {manifest["release_url"]} '
+                f'and add them under Model files in the app, or copy them into {folder}. '
+                'For automatic private downloads, run gh auth login from the prediction environment.')
+            try:
+                with tmp.open('wb') as out:
+                    subprocess.run(['gh','api',f'repos/bardu98/EvoPhi-DDG/releases/assets/{asset_id}',
+                                    '-H','Accept: application/octet-stream'],stdout=out,stderr=subprocess.PIPE,check=True)
+            except subprocess.CalledProcessError as error:
+                tmp.unlink(missing_ok=True)
+                if error.returncode==4:
+                    raise RuntimeError('GitHub CLI is not signed in on this computer, so it could not download the model files. '
+                        'Signing in through a browser does not sign in the command-line client. '+instructions) from error
+                raise RuntimeError('GitHub could not download the model files. Check that the signed-in account has access '
+                    'to the private repository, or use the browser download. '+instructions) from error
         if sha256(tmp)!=item['sha256']:
             tmp.unlink(missing_ok=True)
             raise ValueError(f'Downloaded {name} checkpoint failed its SHA256 check.')
